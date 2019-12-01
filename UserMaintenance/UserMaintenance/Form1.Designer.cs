@@ -32,6 +32,7 @@
             this.fullname = new System.Windows.Forms.TextBox();
             this.lblLastName = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.Write = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -53,7 +54,7 @@
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(353, 27);
+            this.lblLastName.Location = new System.Drawing.Point(332, 25);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(46, 17);
             this.lblLastName.TabIndex = 3;
@@ -69,11 +70,22 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // Write
+            // 
+            this.Write.Location = new System.Drawing.Point(397, 109);
+            this.Write.Name = "Write";
+            this.Write.Size = new System.Drawing.Size(218, 23);
+            this.Write.TabIndex = 6;
+            this.Write.Text = "button1";
+            this.Write.UseVisualStyleBackColor = true;
+            this.Write.Click += new System.EventHandler(this.Write_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Write);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.fullname);
@@ -91,6 +103,7 @@
         private System.Windows.Forms.TextBox fullname;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button Write;
     }
 }
 
